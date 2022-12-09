@@ -6,13 +6,10 @@ package frc.robot.subsystems;
 
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
-// import edu.wpi.first.wpilibj.GenericHID;
-// import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj.motorcontrol.MotorControllerGroup;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.Constants;
-// import frc.robot.RobotContainer;
 
 
 public class Drivebase extends SubsystemBase {
@@ -23,8 +20,6 @@ public class Drivebase extends SubsystemBase {
   final MotorControllerGroup m_left;
   final MotorControllerGroup m_right;
   final DifferentialDrive m_myRobot;
-
-  // final XboxController xbox0;
 
   /** Creates a new Drivebase. */
   public Drivebase() {
@@ -40,11 +35,6 @@ public class Drivebase extends SubsystemBase {
 
 
     m_myRobot = new DifferentialDrive(m_left, m_right);
-
-
-
-    // LEFT OFF HERE
-    // ^^ past me i swear plz tell me what you were doing next time come on i can't remember everything
   }
 
   public void drive(double robotOutput, double turnAmount) {
