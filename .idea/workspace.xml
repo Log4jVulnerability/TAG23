@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a550f9e-b3b2-48bb-b38e-c8d8052f20e3" name="Changes" comment="fjdsklfaljaklaaaaaaaaaaaaaaaaaaaaa">
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/commands/Drawbridge.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/BridgeAngle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendordeps/REVLib.json" beforeDir="false" />
+    <list default="true" id="8a550f9e-b3b2-48bb-b38e-c8d8052f20e3" name="Changes" comment="ok plz">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670547842772</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ok plz">
+      <created>1670550870972</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670550870972</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,9 +130,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fjdsklfaljaklaaaaaaaaaaaaaaaaaaaaa" />
     <MESSAGE value="fjdsklfaljaklaaaaaaaaaaaaaaaaaaaaa 2: electric boogaloo" />
-    <option name="LAST_COMMIT_MESSAGE" value="fjdsklfaljaklaaaaaaaaaaaaaaaaaaaaa 2: electric boogaloo" />
+    <MESSAGE value="ok plz" />
+    <option name="LAST_COMMIT_MESSAGE" value="ok plz" />
   </component>
   <component name="WpiLibVersionService">
-    <option name="lastChecked" value="20221208190724" />
+    <option name="lastChecked" value="20221208200311" />
   </component>
 </project>
