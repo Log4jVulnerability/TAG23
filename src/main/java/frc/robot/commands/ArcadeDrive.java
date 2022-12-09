@@ -4,22 +4,26 @@
 
 package frc.robot.commands;
 
-import frc.robot.subsystems.ExampleSubsystem;
+// import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj2.command.CommandBase;
+import frc.robot.RobotContainer;
+import frc.robot.subsystems.Drivebase;
+// import edu.wpi.first.wpilibj.drive.DifferentialDrive;
+
 
 /** An example command that uses an example subsystem. */
-public class ExampleCommand extends CommandBase {
+public class ArcadeDrive extends CommandBase {
   @SuppressWarnings({"PMD.UnusedPrivateField", "PMD.SingularField"})
-  private final ExampleSubsystem m_subsystem;
+  private final Drivebase m_drivebase;
+
 
   /**
    * Creates a new ExampleCommand.
    *
    * @param subsystem The subsystem used by this command.
    */
-  public ExampleCommand(ExampleSubsystem subsystem) {
-    m_subsystem = subsystem;
-    // Use addRequirements() here to declare subsystem dependencies.
+  public ArcadeDrive(Drivebase subsystem) {
+    m_drivebase = subsystem;
     addRequirements(subsystem);
   }
 
@@ -29,11 +33,20 @@ public class ExampleCommand extends CommandBase {
 
   // Called every time the scheduler runs while the command is scheduled.
   @Override
-  public void execute() {}
+  public void execute() {
+    double forwardVal = RobotContainer.getDriveRightTrigger();
+    double backwardVal = RobotContainer.getDriveLeftTrigger();
+
+    double robotOutput = forwardVal - backwardVal;
+    double turnAmount = RobotContainer.getDriveSteer();
+    m_drivebase.drive(robotOutput, turnAmount);
+  }
 
   // Called once the command ends or is interrupted.
   @Override
-  public void end(boolean interrupted) {}
+  public void end(boolean interrupted) {
+    m_drivebase.stopMotors();
+  }
 
   // Returns true when the command should end.
   @Override
