@@ -4,11 +4,10 @@
 
 package frc.robot.subsystems;
 
-import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
-
-import edu.wpi.first.wpilibj.drive.DifferentialDrive;
-import edu.wpi.first.wpilibj.motorcontrol.MotorControllerGroup;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
+import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
+import edu.wpi.first.wpilibj.motorcontrol.MotorControllerGroup;
+import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import frc.robot.Constants;
 
 
@@ -33,15 +32,11 @@ public class Drivebase extends SubsystemBase {
     rearRightMotor.setInverted(true);
     m_right = new MotorControllerGroup(frontRightMotor, rearRightMotor);
 
-
     m_myRobot = new DifferentialDrive(m_left, m_right);
   }
 
   public void drive(double robotOutput, double turnAmount) {
-    m_myRobot.arcadeDrive(
-            robotOutput * Constants.SPEED_SCALING,
-            turnAmount * Constants.TURN_SCALING
-    );
+    m_myRobot.arcadeDrive(robotOutput * Constants.SPEED_SCALING, turnAmount * Constants.TURN_SCALING);
   }
 
   public void stopMotors() {

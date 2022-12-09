@@ -17,7 +17,10 @@ public final class Constants {
     public static int rearLeftID = 14;
     public static int frontRightID = 13;
     public static int rearRightID = 15;
-    public static int gameMotor = 16;
+
+    public static int drawbridgeMotor = 16;
+    public static int flywheelLeft = 17;
+    public static int flywheelRight = 18;
 
     public static double SPEED_SCALING = 0.8;
     public static double TURN_SCALING = 0.6;

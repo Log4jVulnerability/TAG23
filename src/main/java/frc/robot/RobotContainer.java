@@ -10,7 +10,6 @@ import frc.robot.commands.ArcadeDrive;
 import frc.robot.subsystems.Drivebase;
 import edu.wpi.first.wpilibj2.command.Command;
 
-
 /**
  * This class is where the bulk of the robot should be declared. Since Command-based is a
  * "declarative" paradigm, very little robot logic should actually be handled in the {@link Robot}
@@ -30,21 +29,10 @@ public class RobotContainer {
     m_drivebase.setDefaultCommand(m_arcadeDrive);
   }
 
-  public static XboxController getXbox0(){
-    return xbox0;
-  }
-
-  public static double getDriveRightTrigger() {
-    return getXbox0().getRightTriggerAxis();
-  }
-
-  public static double getDriveLeftTrigger() {
-    return getXbox0().getLeftTriggerAxis();
-  }
-
-  public static double getDriveSteer() {
-    return getXbox0().getLeftX();
-  }
+  public static XboxController getXbox0() {return xbox0;}
+  public static double getDriveRightTrigger() {return getXbox0().getRightTriggerAxis();}
+  public static double getDriveLeftTrigger() {return getXbox0().getLeftTriggerAxis();}
+  public static double getDriveSteer() {return getXbox0().getLeftX();}
 
   /**
    * Use this method to define your button->command mappings. Buttons can be created by

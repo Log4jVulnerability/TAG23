@@ -4,11 +4,9 @@
 
 package frc.robot.commands;
 
-// import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.RobotContainer;
 import frc.robot.subsystems.Drivebase;
-// import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 
 
 /** An example command that uses an example subsystem. */
@@ -22,6 +20,7 @@ public class ArcadeDrive extends CommandBase {
    *
    * @param subsystem The subsystem used by this command.
    */
+
   public ArcadeDrive(Drivebase subsystem) {
     m_drivebase = subsystem;
     addRequirements(subsystem);
@@ -36,7 +35,6 @@ public class ArcadeDrive extends CommandBase {
   public void execute() {
     double forwardVal = RobotContainer.getDriveRightTrigger();
     double backwardVal = RobotContainer.getDriveLeftTrigger();
-
     double robotOutput = forwardVal - backwardVal;
     double turnAmount = RobotContainer.getDriveSteer();
     m_drivebase.drive(robotOutput, turnAmount);
@@ -44,13 +42,9 @@ public class ArcadeDrive extends CommandBase {
 
   // Called once the command ends or is interrupted.
   @Override
-  public void end(boolean interrupted) {
-    m_drivebase.stopMotors();
-  }
+  public void end(boolean interrupted) {m_drivebase.stopMotors();}
 
   // Returns true when the command should end.
   @Override
-  public boolean isFinished() {
-    return false;
-  }
+  public boolean isFinished() {return false;}
 }
