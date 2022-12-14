@@ -5,14 +5,13 @@
 package frc.robot.commands;
 
 import edu.wpi.first.wpilibj2.command.CommandBase;
-import frc.robot.subsystems.Drivebase;
-import frc.robot.RobotContainer;
-
+import frc.robot.subsystems.Drawbridge;
 
 /** An example command that uses an example subsystem. */
-public class ArcadeDrive extends CommandBase {
+public class BridgeFlywheels extends CommandBase {
     @SuppressWarnings({"PMD.UnusedPrivateField", "PMD.SingularField"})
-    private final Drivebase m_drivebase;
+    private final Drawbridge m_drawbridge;
+    private final Boolean in;
 
 
     /**
@@ -21,8 +20,9 @@ public class ArcadeDrive extends CommandBase {
      * @param subsystem The subsystem used by this command.
      */
 
-    public ArcadeDrive(Drivebase subsystem) {
-        m_drivebase = subsystem;
+    public BridgeFlywheels(Drawbridge subsystem, Boolean takeIn) {
+        m_drawbridge = subsystem;
+        in = takeIn;
         addRequirements(subsystem);
     }
 
@@ -33,16 +33,14 @@ public class ArcadeDrive extends CommandBase {
     // Called every time the scheduler runs while the command is scheduled.
     @Override
     public void execute() {
-        double forwardVal = RobotContainer.getDriveRightTrigger();
-        double backwardVal = RobotContainer.getDriveLeftTrigger();
-        double robotOutput = forwardVal - backwardVal;
-        double turnAmount = RobotContainer.getDriveSteer();
-        m_drivebase.drive(robotOutput, turnAmount);
+        m_drawbridge.runFlywheels(in);
     }
 
     // Called once the command ends or is interrupted.
     @Override
-    public void end(boolean interrupted) {m_drivebase.stopMotors();}
+    public void end(boolean interrupted) {
+        m_drawbridge.stopFlywheels();
+    }
 
     // Returns true when the command should end.
     @Override

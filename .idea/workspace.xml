@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a550f9e-b3b2-48bb-b38e-c8d8052f20e3" name="Changes" comment="fjdsklfaljaklaaaaaaaaaaaaaaaaaaaaa 2: electric boogaloo">
-      <change afterPath="$PROJECT_DIR$/src/main/java/frc/robot/commands/Drawbridge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/BridgeAngle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendordeps/REVLib.json" afterDir="false" />
+    <list default="true" id="8a550f9e-b3b2-48bb-b38e-c8d8052f20e3" name="Changes" comment="actually making the thing lmao">
+      <change afterPath="$PROJECT_DIR$/src/main/java/frc/robot/commands/BridgeFlywheels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Drawbridge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/Robot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/RobotContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/RobotContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/commands/ArcadeDrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/commands/ArcadeDrive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/commands/Drawbridge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/commands/BridgeAngle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/BridgeAngle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Drivebase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Drivebase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,15 +78,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.packagesearch.PackageSearchGeneralConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "inlay.hints"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\fear9\git\TAG23\src\main\java\frc\robot\commands" />
@@ -96,6 +103,7 @@
       <updated>1670546222433</updated>
       <workItem from="1670546224504" duration="1646000" />
       <workItem from="1670547963406" duration="2123000" />
+      <workItem from="1670976541750" duration="5376000" />
     </task>
     <task id="LOCAL-00001" summary="fjdsklfaljaklaaaaaaaaaaaaaaaaaaaaa">
       <created>1670547463678</created>
@@ -118,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670550870972</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="actually making the thing lmao">
+      <created>1670553575650</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670553575650</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,9 +154,10 @@
     <MESSAGE value="fjdsklfaljaklaaaaaaaaaaaaaaaaaaaaa" />
     <MESSAGE value="fjdsklfaljaklaaaaaaaaaaaaaaaaaaaaa 2: electric boogaloo" />
     <MESSAGE value="ok plz" />
-    <option name="LAST_COMMIT_MESSAGE" value="ok plz" />
+    <MESSAGE value="actually making the thing lmao" />
+    <option name="LAST_COMMIT_MESSAGE" value="actually making the thing lmao" />
   </component>
   <component name="WpiLibVersionService">
-    <option name="lastChecked" value="20221208200311" />
+    <option name="lastChecked" value="20221213180909" />
   </component>
 </project>
