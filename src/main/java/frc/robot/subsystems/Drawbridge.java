@@ -44,16 +44,16 @@ public class Drawbridge extends SubsystemBase {
 
     public void runFlywheels(boolean in) {
         if (in) {
-            flywheelLeft.set(Constants.flywheelSpeed);
-            flywheelRight.set(-Constants.flywheelSpeed);
-        } else {
             flywheelLeft.set(-Constants.flywheelSpeed);
             flywheelRight.set(Constants.flywheelSpeed);
+        } else {
+            flywheelLeft.set(Constants.flywheelSpeed);
+            flywheelRight.set(-Constants.flywheelSpeed);
         }
     }
 
     public void stopFlywheels() {
-        flywheelLeft.stopMotor();
-        flywheelRight.stopMotor();
+        flywheelLeft.set(0.0);
+        flywheelRight.set(0.0);
     }
 }

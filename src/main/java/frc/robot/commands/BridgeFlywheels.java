@@ -32,15 +32,11 @@ public class BridgeFlywheels extends CommandBase {
 
     // Called every time the scheduler runs while the command is scheduled.
     @Override
-    public void execute() {
-        m_drawbridge.runFlywheels(in);
-    }
+    public void execute() {m_drawbridge.runFlywheels(in);}
 
     // Called once the command ends or is interrupted.
     @Override
-    public void end(boolean interrupted) {
-        m_drawbridge.stopFlywheels();
-    }
+    public void end(boolean interrupted) {m_drawbridge.stopFlywheels();}
 
     // Returns true when the command should end.
     @Override
