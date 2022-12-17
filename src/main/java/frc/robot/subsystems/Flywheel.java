@@ -13,14 +13,9 @@ public class Flywheel extends SubsystemBase {
         flywheelRight = new WPI_TalonSRX(Constants.flywheelRight);
     }
 
-    public void runFlywheels(boolean in) {
-        if (in) {
-            flywheelLeft.set(-Constants.flywheelSpeed);
-            flywheelRight.set(Constants.flywheelSpeed);
-        } else {
-            flywheelLeft.set(Constants.flywheelSpeed);
-            flywheelRight.set(-Constants.flywheelSpeed);
-        }
+    public void runFlywheels(double Amt) {
+        flywheelLeft.set(Amt);
+        flywheelRight.set(-Amt);
     }
 
     public void stopFlywheels() {

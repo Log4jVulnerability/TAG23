@@ -35,6 +35,8 @@ public class RobotContainer {
         m_drivebase.setDefaultCommand(m_arcadeDrive);
         BridgeAngle m_bridgeAngle = new BridgeAngle(m_drawbridge);
         m_drawbridge.setDefaultCommand(m_bridgeAngle);
+        BridgeFlywheels m_bridgeFlywheels = new BridgeFlywheels(m_flywheel);
+        m_flywheel.setDefaultCommand(m_bridgeFlywheels);
     }
     /* ONE CONTROLLER
     public static XboxController getXbox0() {return xbox0;}
@@ -50,6 +52,7 @@ public class RobotContainer {
     public static double getDriveLeftTrigger() {return getXbox0().getLeftTriggerAxis();}
     public static double getDriveSteer() {return getXbox0().getLeftX();}
     public static double getBridgeAngle() {return getXbox1().getLeftY();}
+    public static double getFlywheelAmt() {return getXbox1().getRightTriggerAxis() - getXbox1().getLeftTriggerAxis();}
 
     /**
      * Use this method to define your button->command mappings. Buttons can be created by
@@ -62,9 +65,6 @@ public class RobotContainer {
         new JoystickButton(xbox0, XboxController.Button.kLeftBumper.value).whenHeld(new BridgeFlywheels(m_drawbridge, true));
         new JoystickButton(xbox0, XboxController.Button.kRightBumper.value).whenHeld(new BridgeFlywheels(m_drawbridge, false));
         */
-
-        new JoystickButton(xbox1, XboxController.Button.kLeftBumper.value).whenHeld(new BridgeFlywheels(m_flywheel, true));
-        new JoystickButton(xbox1, XboxController.Button.kRightBumper.value).whenHeld(new BridgeFlywheels(m_flywheel, false));
     }
 
 }
