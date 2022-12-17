@@ -22,6 +22,7 @@ import frc.robot.commands.BridgeZero;
 public class RobotContainer {
     // The robot's subsystems and commands are defined here...
     public final static XboxController xbox0 = new XboxController(0);
+    public final static XboxController xbox1 = new XboxController(1);
     public final static Drivebase m_drivebase = new Drivebase();
     public final static Drawbridge m_drawbridge = new Drawbridge();
 
@@ -34,12 +35,20 @@ public class RobotContainer {
         BridgeAngle m_bridgeAngle = new BridgeAngle(m_drawbridge);
         m_drawbridge.setDefaultCommand(m_bridgeAngle);
     }
-
+    /* ONE CONTROLLER
     public static XboxController getXbox0() {return xbox0;}
     public static double getDriveRightTrigger() {return getXbox0().getRightTriggerAxis();}
     public static double getDriveLeftTrigger() {return getXbox0().getLeftTriggerAxis();}
     public static double getDriveSteer() {return getXbox0().getLeftX();}
-    public static double getBridgeAngle() {return getXbox0().getRightY();}
+    public static double getBridgeAngle() {return getXbox1().getLeftY();}
+    */
+
+    public static XboxController getXbox0() {return xbox0;}
+    public static XboxController getXbox1() {return xbox1;}
+    public static double getDriveRightTrigger() {return getXbox0().getRightTriggerAxis();}
+    public static double getDriveLeftTrigger() {return getXbox0().getLeftTriggerAxis();}
+    public static double getDriveSteer() {return getXbox0().getLeftX();}
+    public static double getBridgeAngle() {return getXbox1().getLeftY();}
 
     /**
      * Use this method to define your button->command mappings. Buttons can be created by
@@ -48,9 +57,15 @@ public class RobotContainer {
      * edu.wpi.first.wpilibj2.command.button.JoystickButton}.
      */
     private void configureButtonBindings() {
+        /* ONE CONTROLLER
         new JoystickButton(xbox0, XboxController.Button.kLeftBumper.value).whenHeld(new BridgeFlywheels(m_drawbridge, true));
         new JoystickButton(xbox0, XboxController.Button.kRightBumper.value).whenHeld(new BridgeFlywheels(m_drawbridge, false));
         new JoystickButton(xbox0, XboxController.Button.kRightStick.value).whenHeld(new BridgeZero(m_drawbridge));
+        */
+
+        new JoystickButton(xbox1, XboxController.Button.kLeftBumper.value).whenHeld(new BridgeFlywheels(m_drawbridge, true));
+        new JoystickButton(xbox1, XboxController.Button.kRightBumper.value).whenHeld(new BridgeFlywheels(m_drawbridge, false));
+        new JoystickButton(xbox1, XboxController.Button.kLeftStick.value).whenHeld(new BridgeZero(m_drawbridge));
     }
 
 }
