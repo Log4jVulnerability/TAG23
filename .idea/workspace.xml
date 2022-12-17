@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a550f9e-b3b2-48bb-b38e-c8d8052f20e3" name="Changes" comment="flywheels">
+    <list default="true" id="8a550f9e-b3b2-48bb-b38e-c8d8052f20e3" name="Changes" comment="can swap between 1 and 2 controllers">
+      <change afterPath="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Flywheel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/RobotContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/RobotContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/commands/BridgeAngle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/commands/BridgeAngle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/commands/BridgeFlywheels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/commands/BridgeFlywheels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/commands/BridgeZero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Drawbridge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/Drawbridge.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +27,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -84,6 +93,29 @@
       <recent name="C:\Users\fear9\git\TAG23\src\main\java\frc\robot\subsystems" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Deploy" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--offline -Dorg.gradle.java.home=&quot;C:\Users\Public\wpilib\2022\jdk&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="deploy" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -95,7 +127,7 @@
       <workItem from="1670546224504" duration="1646000" />
       <workItem from="1670547963406" duration="2123000" />
       <workItem from="1670976541750" duration="5376000" />
-      <workItem from="1671289780269" duration="903000" />
+      <workItem from="1671289780269" duration="7297000" />
     </task>
     <task id="LOCAL-00001" summary="fjdsklfaljaklaaaaaaaaaaaaaaaaaaaaa">
       <created>1670547463678</created>
@@ -132,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671158763800</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="can swap between 1 and 2 controllers">
+      <created>1671291476535</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671291476535</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +194,8 @@
     <MESSAGE value="ok plz" />
     <MESSAGE value="actually making the thing lmao" />
     <MESSAGE value="flywheels" />
-    <option name="LAST_COMMIT_MESSAGE" value="flywheels" />
+    <MESSAGE value="can swap between 1 and 2 controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="can swap between 1 and 2 controllers" />
   </component>
   <component name="WpiLibVersionService">
     <option name="lastChecked" value="20221217090950" />

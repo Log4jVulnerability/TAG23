@@ -5,12 +5,12 @@
 package frc.robot.commands;
 
 import edu.wpi.first.wpilibj2.command.CommandBase;
-import frc.robot.subsystems.Drawbridge;
+import frc.robot.subsystems.Flywheel;
 
 /** An example command that uses an example subsystem. */
 public class BridgeFlywheels extends CommandBase {
     @SuppressWarnings({"PMD.UnusedPrivateField", "PMD.SingularField"})
-    private final Drawbridge m_drawbridge;
+    private final Flywheel m_flywheel;
     private final Boolean in;
 
 
@@ -20,8 +20,8 @@ public class BridgeFlywheels extends CommandBase {
      * @param subsystem The subsystem used by this command.
      */
 
-    public BridgeFlywheels(Drawbridge subsystem, Boolean takeIn) {
-        m_drawbridge = subsystem;
+    public BridgeFlywheels(Flywheel subsystem, Boolean takeIn) {
+        m_flywheel = subsystem;
         in = takeIn;
         addRequirements(subsystem);
     }
@@ -32,11 +32,13 @@ public class BridgeFlywheels extends CommandBase {
 
     // Called every time the scheduler runs while the command is scheduled.
     @Override
-    public void execute() {m_drawbridge.runFlywheels(in);}
+    public void execute() {
+        m_flywheel.runFlywheels(in);}
 
     // Called once the command ends or is interrupted.
     @Override
-    public void end(boolean interrupted) {m_drawbridge.stopFlywheels();}
+    public void end(boolean interrupted) {
+        m_flywheel.stopFlywheels();}
 
     // Returns true when the command should end.
     @Override

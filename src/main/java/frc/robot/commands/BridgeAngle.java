@@ -12,8 +12,6 @@ import frc.robot.RobotContainer;
 public class BridgeAngle extends CommandBase {
     @SuppressWarnings({"PMD.UnusedPrivateField", "PMD.SingularField"})
     private final Drawbridge m_drawbridge;
-
-
     /**
      * Creates a new ExampleCommand.
      *
@@ -26,12 +24,15 @@ public class BridgeAngle extends CommandBase {
     }
 
     // Called when the command is initially scheduled.
+
     @Override
     public void initialize() {}
-
     // Called every time the scheduler runs while the command is scheduled.
+
     @Override
-    public void execute() {m_drawbridge.runAngle(RobotContainer.getBridgeAngle());}
+    public void execute() {
+        m_drawbridge.run(RobotContainer.getBridgeAngle());
+    }
 
     // Called once the command ends or is interrupted.
     @Override

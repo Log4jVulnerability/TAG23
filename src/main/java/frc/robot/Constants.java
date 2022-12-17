@@ -19,7 +19,7 @@ public final class Constants {
     public static int rearRightID = 15;
 
     public static int drawbridgeMotor = 16;
-    public static double drawbridgeSpeed = 0.9;
+    public static double drawbridgeSpeed = 0.75;
     public static int flywheelLeft = 17;
     public static int flywheelRight = 18;
     public static double flywheelSpeed = 0.9;
